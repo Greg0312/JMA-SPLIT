@@ -24,7 +24,7 @@ $blinkspeed=1000;
 <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 <link href="css/bootstrap-3.3.4.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/font-awesome.css">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -32,28 +32,28 @@ $blinkspeed=1000;
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 <style>
-	.blink_txt{ color:#FFFF0F; font-size:13px; font-weight:600; float: right; width:180px}
-	.blink_txt .glyphicon{ color:#0edf2b; display:inline-block;}
+	.blink_txt{ color:#450506; font-size:13px; font-weight:600; float: right; width:130px}
+	.blink_txt .fa{ color:#0edf2b; display:inline-block;}
 	#tits h1{ margin:0; padding:0; font-size:50px; font-weight:700; text-shadow:1px 1px 2px #000000; line-height:35px; margin-bottom:10px;}
 	#tits h2{ margin:0; padding:0; font-size:25px; font-weight:400; text-shadow:1px 1px 2px #000000}
 	#tits h3{ margin:0; padding:0; font-size:17px; font-weight:600; text-shadow:1px 1px 2px #000000; margin-top:20px;}
 	#tits h3 span{font-size:20px; font-weight:600; text-shadow:1px 1px 2px #000000; margin-top:20px;}
 	#tits1 {border: 2px solid #a1a1a1; padding: 10px; background: #dddddd;border-radius: 25px;}
-	#tits li{color: #CCCB0E; font-weight:bold; background-color:#BDA0CB;}
-	
+	#tits li{color: #45464b; font-weight:bold; background-color:#BDA0CB;}
+	#tits {border: 1px solid #a1a1a1; padding: 10px; background: #c8c1a4; background-image:url(img/doc_bkg.jpg); background-position:right; background-repeat:no-repeat; background-size: contain; }
 	select {
 	font-size:18px; font-weight:bold; text-shadow:#A6A6A6 1px 1px 3px; background-color:#F8E004;
 	}
-	#matter{max-width:780px; max-height:300px; width:100%; height:150px; margin-right:10px; margin-left:0px;}
+	#matter{max-width:780px; max-height:100px; width:100%; height:100px; margin-right:10px; margin-left:0px;}
 	.cntnrbg{background-color:#452f6b; max-width:810px; width:100%; border-radius:15px; padding:25px;}
-	.h2color{color:#FFFF0F; padding-top:20px;}
-	
+	.h2color{color:#45464b; padding-top:18px;}
+	.text-center{color: #450506}
 </style>
 </head>
 <body>
 <header>
 <div class="container">
-<div class="row" id="tits">
+<div class="row">
 <p>
 <div class="col-xs-12 col-sm-6 col-lg-8" >
 
@@ -75,12 +75,17 @@ $blinkspeed=1000;
   <div class="row">
     <div class="col-lg-12" >
       <div class="jumbotron"  id="tits" >
-        <h2 class="text-center">Ask a Lawyer Online any Question</h2>
-        <p>&nbsp;</p>
-        
-        <div class="container" style="background-color:#17a4b2; max-width:810px; width:100%; border-radius:15px; padding:25px">
-         
+       
+             
+        <div class="container" style="background-color:#e9e7dd; max-width:610px; width:100%; border-radius:15px; padding:15px;">
+          <h2 class="text-center">Ask a Lawyer Online any Question</h2>
         <form action="<?=$funnel_link?>" method="post" name="name="frmCompleteOrder"" >
+
+
+    
+ 
+ <h3>Please explain your legal question below</h3><br>
+<textarea name="matter" id="matter" required placeholder="Hi, can I answer your legal question? Please type your question here..." ></textarea>
 
 <div class="form-group">
       <p></p>
@@ -100,18 +105,56 @@ $blinkspeed=1000;
     </select> 
    
     </div>
-    
- 
- <h2 class="h2color">Please explain your legal question below</h2><br>
-<textarea name="matter" id="matter" required placeholder="Hi, can I answer your legal question? Please type your question here..." ></textarea><br><br>
-<div class="blink_txt"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> <span id="blnktextonline" style="display: none;color:#FFFF0F;">8 Lawyers online</span></div>
-<button class="btn btn-warning"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Ask Lawyer Online</button>
+
+<div class="blink_txt"><i class="fa fa-circle"></i> <span id="blnktextonline" style="display:none;">8 Lawyers online</span></div>
+<button class="btn btn-warning"><i class="fa fa-gavel"></i> Ask Lawyer Online</button>
 <p>&nbsp;</p>
 
 </div>
 </div>
     </div>
   </div>
+  <div class="container">
+   <h3 align="center">How It Works</h3>
+  <div class="col-lg-12 col-md-12 col-sm-12 no_pad" style="font-size:16px;">
+ <div class="col-xs-6 col-sm-4">
+ 1) <i class="fa fa-commenting"></i> Ask you detailed legal question <i class="fa fa-long-arrow-right"></i>
+ </div>
+  <div class="col-xs-6 col-sm-4">
+ 2) <i class="fa fa-male"></i><i class="fa fa-female"></i> Get the answer from lawyer that specializes in your issue <i class="fa fa-long-arrow-right"></i>
+ </div>
+ <div class="col-xs-6 col-sm-4 ">
+ 3) <i class="fa fa-thumbs-up"></i> Resolve your issue and be on your way
+ </div>
+  </div>
+  <div class="clearfix"></div>
+  <hr>
+ 
+  <h3 align="center
+   ">Why Legal Advice Online</h3>
+  <div class="col-lg-12 col-md-12 col-sm-12 no_pad">
+ <div class="col-xs-6 col-sm-4">
+ 
+<h4 align="center"><strong>Simple</strong></h4>
+The law is complex. We make it fast and easy to get an answer from a real lawyer online.
+
+ </div>
+  <div class="col-xs-6 col-sm-4">
+ 
+<h4 align="center"><strong>On Demand</strong></h4>
+Have a legal question about starting a business or protecting your family? Get the guidance you need, now.
+
+ </div>
+ <div class="col-xs-6 col-sm-4 ">
+  
+<h4 align="center"><strong>Trusted</strong></h4>
+Ask a question with confidence. We'll protect your privacy and keep your information safe.
+
+ </div>
+  </div>
+  <div class="clearfix"></div>
+  <hr>
+  <div class="clearfix"></div>
   <div class="col-lg-12 col-md-12 col-sm-12 no_pad">
         <p class="disclaimer">My response is offered only as a public service to you and does not constitute solicitation or provision of legal advice. My response should not be used as a substitute for
 obtaining legal advice from an <?//=$_SESSION["site_word"]?> licensed or authorized to practice in your jurisdiction. You should always consult a suitably qualified <?//=$_SESSION["site_word"]?> regarding any
@@ -119,10 +162,11 @@ specific legal problem or matter. My response is not intended to create an <?//=
 and Conditions for additional information.</p>
         </div>
 </div>
+</div>
 <div class="container">
   <div class="row">
    
-    <hr>
+    
     <div class="col-xs-6">
       <div class="panel panel-default panel-success"> 
      
@@ -143,7 +187,7 @@ and Conditions for additional information.</p>
               <th scope="row">Do I have legal rights to pick up my step daughter from her mother?</th>
             </tr>
             <tr>
-              <th scope="row"><p class="text-center"><button class="btn-success btn"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Ask Lawyer</button></p></th>
+              <th scope="row"><p class="text-center"><button class="btn-success btn"><i class="fa fa-gavel"></i> Ask Lawyer</button></p></th>
             </tr>
           </tbody>
         </table>
@@ -171,7 +215,7 @@ and Conditions for additional information.</p>
               <th scope="row">What is the statute of limitation for a dad to come into the picture?</th>
             </tr>
             <tr>
-              <th scope="row"><p class="text-center"><button href="" class="btn-warning btn"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Ask Lawyer</button></p>
+              <th scope="row"><p class="text-center"><button href="" class="btn-warning btn"><i class="fa fa-gavel"></i> Ask Lawyer</button></p>
               </th>
             </tr>
           </tbody>
